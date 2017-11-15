@@ -1,0 +1,1 @@
+This quiz app is designed to return a random set of questions based on the user's input. It was built using JavaScript, JQuery, HTML5/CSS, and the https://opentdb.com API.
