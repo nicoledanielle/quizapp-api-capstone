@@ -153,7 +153,7 @@ const templates = {
   generateAnswerItemHtml(answer) {
     return `
       <li class="answer-item">
-        <input type="radio" name="answers" value="${answer}" />
+        <input type="radio" role="radio" name="answers" value="${answer}" />
         <span class="answer-text">${answer}</span>
       </li>
     `;
@@ -163,13 +163,12 @@ const templates = {
     const answers = question.answers
       .map((answer, index) => this.generateAnswerItemHtml(answer, index))
       .join('');
-
     return `
-      <form>
+      <form role="form">
         <fieldset>
           <legend class="question-text">${question.text}</legend>
             ${answers}
-            <button type="submit">Submit</button>
+            <button class="submit-form" type="submit" role="button">Submit</button>
         </fieldset>
       </form>
     `;
@@ -180,7 +179,7 @@ const templates = {
       <p>
         ${feedback}
       </p>
-      <button class="continue js-continue">Continue</button>
+      <button class="continue js-continue" role="button">Continue</button>
     `;
   },
 };
