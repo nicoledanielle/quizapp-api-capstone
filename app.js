@@ -164,7 +164,7 @@ const templates = {
       .map((answer, index) => this.generateAnswerItemHtml(answer, index))
       .join('');
     return `
-      <form role="form">
+      <form>
         <fieldset>
           <legend class="question-text">${question.text}</legend>
             ${answers}
