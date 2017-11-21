@@ -94,9 +94,8 @@ form {
 
 @media only screen 
 and (min-device-width: 320px) 
-and (max-device-width: 667px) 
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {  
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {  
   
   #wrapper {
     width: 90%;
@@ -110,6 +109,10 @@ and (orientation: portrait) {
 
   .start-button {
     margin-top: 10px
+  }
+
+  #js-question-quantity {
+  /* add a background image for the select arrow */
   }
 
 }

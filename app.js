@@ -153,7 +153,7 @@ const templates = {
   generateAnswerItemHtml(answer) {
     return `
       <li class="answer-item">
-        <input type="radio" role="radio" name="answers" value="${answer}" />
+        <label for="${answer}"></label><input type="radio" role="radio" name="answers" value="${answer}" />
         <span class="answer-text">${answer}</span>
       </li>
     `;
